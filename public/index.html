@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            width: 100%;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            display: inline-block;
+            width: 600px;
+            margin: auto;
+        }
+
+        img {
+            border: 1px solid #999;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+
+    <script>
+        window.onload = () => {
+            const baseCfg = {
+                // image size
+                size: 100,
+
+                // font
+                fontFamily: 'Calibri',
+                fontSize: '100',
+
+                // test feature
+                // test: true
+            };
+
+            const users = [
+                {
+                    fullName: 'Eduardo Rodríguez',
+                    config: {
+                        ...baseCfg,
+                        bgColor: '#444',
+                        color: '#fff',
+                        fontSize: 300
+                    }
+                },
+                {
+                    fullName: 'Javier Perez',
+                    config: {
+                        ...baseCfg,
+                        fontFamily: 'Verdana',
+                        bgColor: 'Lightblue',
+                        color: '#000',
+                        fontSize: 100
+                    }
+                },
+                {
+                    fullName: 'Juan Gonzales',
+                    config: {
+                        ...baseCfg,
+                        fontFamily: 'Time News Roman',
+                        bgColor: 'orange',
+                        color: '#fff',
+                        fontSize: 1000
+                    }
+                },
+                {
+                    fullName: 'Alfredo Lopez',
+                    config: {
+                        ...baseCfg,
+                        fontFamily: 'Tahoma',
+                        bgColor: 'pink',
+                        color: '#222',
+                        fontSize: 1000
+                    }
+                },
+                {
+                    fullName: 'Carmen Villanueva',
+                    config: {
+                        ...baseCfg
+                    }
+                },
+                {
+                    fullName: 'Xu Lim',
+                    config: {
+                        ...baseCfg,
+                        bgColor: 'blue',
+                        color: '#fff'
+                    }
+                },
+                {
+                    fullName: 'Alberto Gonzales',
+                    config: {
+                        ...baseCfg,
+                        fontFamily: 'Tahoma',
+                        bgColor: 'red',
+                        color: '#fff'
+                    }
+                },
+                {
+                    fullName: 'Javier Miranda',
+                    config: {
+                        ...baseCfg,
+                        bgColor: '#444',
+                        color: '#fff'
+                    }
+                },
+                {
+                    fullName: 'Cristobal Colón',
+                    config: {
+                        ...baseCfg,
+                        bgColor: 'purple',
+                        color: '#fff'
+                    }
+                },
+                {
+                    fullName: 'Luis Vasquez',
+                    config: {
+                        ...baseCfg,
+                        fontFamily: 'Tahoma'
+                    }
+                }
+            ];
+
+            users.forEach((x, index) => {
+                const image = document.createElement('img');
+
+                image.src = Koditar.render(x.fullName, x.config);
+
+                document.querySelector('.container').append(image);
+            });
+        };
+    </script>
+</body>
+
+</html>
