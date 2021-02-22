@@ -13,6 +13,7 @@ npm install @kodoti/koditar
 window.onload = () => {
     const image = document.createElement('img');
 
+    // the library create a base64 image
     image.src = Koditar.render('Eduardo Rodríguez Patiño');
 
     document.body.append(image);
@@ -24,7 +25,7 @@ window.onload = () => {
 ### ⚠️Note
 The avatar can't recognize between the first and the last name, take care about that.
 
-👉 This means, that the script will only take the first two words found by the string passed.
+👉 This means that the script will only take the first two words found by the text passed.
 
 | Input | Output |
 | ------------- | ------------- |
@@ -35,7 +36,7 @@ The avatar can't recognize between the first and the last name, take care about 
 | AB  | AB
 | A  | A
 
-The result will be one o two letters in uppercase.
+The result will be one or two letters in uppercase.
 
 ### Customize your avatar
 You can customize your avatar adding extra properties to the second parameter of the function:
@@ -49,7 +50,6 @@ You can customize your avatar adding extra properties to the second parameter of
 | fontSize  | 100  | Reference to font-weight property.
 
 #### Usage
-
 ``` javascript
 Koditar.render('Eduardo Rodríguez Patiño', {
     size = 300,
