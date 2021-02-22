@@ -2,6 +2,15 @@
   "name": "@kodoti/koditar",
   "version": "0.0.1",
   "description": "Create an avatar image by taking the initials of a person's name or whatever.",
+  "keywords": [
+    "avatar",
+    "image",
+    "profile",
+    "icon",
+    "user",
+    "javascript",
+    "js"
+  ],
   "main": "./src/index",
   "scripts": {
     "serve": "webpack-dev-server --open",
