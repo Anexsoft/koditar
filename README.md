@@ -22,6 +22,9 @@ window.onload = () => {
 
 <img src="resources/example-a.jpg" style="width:150px;" />
 
+### Live Example
+https://jsfiddle.net/erodriguezp105/dxhgrv6n/1/
+
 ### ⚠️Note
 The avatar can't recognize between the first and the last name, take care about that.
 
