@@ -10,6 +10,7 @@ module.exports = {
     output: {
         library: 'Koditar',
         libraryTarget: 'window',
+        filename: 'index.js'
     },
     module: {
         rules: [

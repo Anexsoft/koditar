@@ -1,13 +1,18 @@
 {
-  "name": "koditar",
-  "version": "1.0.0",
-  "description": "A simple grid to show information related to COVID.",
+  "name": "@kodoti/koditar",
+  "version": "0.0.1",
+  "description": "Create an avatar image by taking the initials of a person's name or whatever.",
+  "main": "./src/index",
   "scripts": {
     "serve": "webpack-dev-server --open",
     "build": "webpack --mode=production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
   },
-  "author": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "kodoti",
   "license": "ISC",
   "dependencies": {
     "clean-webpack-plugin": "^3.0.0",
@@ -21,5 +26,9 @@
     "babel-loader": "^8.2.2",
     "file-loader": "^6.2.0",
     "webpack": "^4.44.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anexsoft/koditar"
   }
 }
