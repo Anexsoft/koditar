@@ -1,7 +1,7 @@
 # KODITAR
 Create an avatar image by taking the initials of a person's name or whatever.
 
-### How to install?
+## How to install?
 
 ```
 npm install @kodoti/koditar
@@ -38,7 +38,7 @@ The avatar can't recognize between the first and the last name, take care about 
 
 The result will be one or two letters in uppercase.
 
-### Customize your avatar
+## Customize your avatar
 You can customize your avatar adding extra properties to the second parameter of the function:
 
 | Parameter name | Default | explain |
@@ -49,7 +49,7 @@ You can customize your avatar adding extra properties to the second parameter of
 | fontFamily  | 'Calibri'  | Font family which will be used.
 | fontSize  | 100  | Reference to font-weight property.
 
-#### Usage
+### Usage
 ``` javascript
 Koditar.render('Eduardo Rodríguez Patiño', {
     size = 300,
@@ -58,10 +58,10 @@ Koditar.render('Eduardo Rodríguez Patiño', {
 });
 ```
 
-### Other examples
+## Other examples
 <img src="resources/result.jpg">
 
-### Direct link
+## Direct link
 To avoid use webpack, gulp or something similar.
 
 Just <a href="https://raw.githubusercontent.com/Anexsoft/koditar/main/dist/index.js">press right click here</a> and download it (it will always be the latest version).
