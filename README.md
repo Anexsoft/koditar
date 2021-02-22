@@ -64,4 +64,4 @@ Koditar.render('Eduardo Rodríguez Patiño', {
 ### Direct link
 To avoid use webpack, gulp or something similar.
 
-Just <a href="https://raw.githubusercontent.com/Anexsoft/koditar/main/dist/index.js">press right click here</a> and download the latest version from the repo.
+Just <a href="https://raw.githubusercontent.com/Anexsoft/koditar/main/dist/index.js">press right click here</a> and download it (it will always be the latest version).
