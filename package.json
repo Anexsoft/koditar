@@ -16,7 +16,7 @@
     "serve": "webpack-dev-server --open",
     "build": "webpack --mode=production",
     "test": "mocha src/**",
-    "prepublishOnly": "npm run test && build"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "publishConfig": {
     "access": "public"
