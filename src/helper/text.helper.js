@@ -43,5 +43,6 @@ function set(ctx, text, cfg) {
 }
 
 module.exports = {
+    sanitize,
     set
 };

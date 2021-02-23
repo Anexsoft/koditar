@@ -15,8 +15,8 @@
   "scripts": {
     "serve": "webpack-dev-server --open",
     "build": "webpack --mode=production",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run build"
+    "test": "mocha src/**",
+    "prepublishOnly": "npm run test && build"
   },
   "publishConfig": {
     "access": "public"
@@ -34,6 +34,7 @@
     "@babel/preset-env": "^7.12.11",
     "babel-loader": "^8.2.2",
     "file-loader": "^6.2.0",
+    "mocha": "^8.3.0",
     "webpack": "^4.44.2"
   },
   "repository": {
