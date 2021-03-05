@@ -28,15 +28,14 @@ https://jsfiddle.net/erodriguezp105/dxhgrv6n/1/
 ### ⚠️Note
 The avatar can't recognize between the first and the last name, take care about that.
 
-👉 This means that the script will only take the first two words found by the text passed.
+👉 This means that the script will only take the first letter of each word passed.
 
 | Input | Output |
 | ------------- | ------------- |
-| Eduardo Rodríguez Patiño  | ER
-| Juan Jose Gonzales Miranda  | JJ
-| Alberto Miguel Javier Perez Lozano  | AM
-| Eduardo  | ED
-| AB  | AB
+| Eduardo Rodríguez Patiño | ER
+| Juan Jose Gonzales Miranda | JJ
+| Alberto Miguel Javier Perez Lozano | AM
+| Eduardo | E
 | A  | A
 
 The result will be one or two letters in uppercase.
