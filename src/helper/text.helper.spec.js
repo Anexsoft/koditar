@@ -19,7 +19,7 @@ describe('Text.Helper', () => {
 
     it('first name', () => {
         const text = textHelper.sanitize('Eduardo');
-        assert.strictEqual(text, 'ED');
+        assert.strictEqual(text, 'E');
     });
 
     it('lowercase passed', () => {

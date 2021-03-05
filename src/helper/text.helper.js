@@ -14,7 +14,7 @@ function sanitize(text) {
         }
         // when the text passed is the first name. Ex: Juan
         else if (parts) {
-            text = parts[0][0] + parts[0][1];
+            text = parts[0][0];
         }
     }
 
