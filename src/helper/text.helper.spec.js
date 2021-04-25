@@ -32,8 +32,29 @@ describe('Text.Helper', () => {
         assert.strictEqual(text, '1-');
     });
 
+    it('two letter passed', () => {
+        const text = textHelper.sanitize('AE');
+        assert.strictEqual(text, 'AE');
+    });
+
     it('one letter passed', () => {
         const text = textHelper.sanitize('A');
         assert.strictEqual(text, 'A');
+    });
+
+    it('accent mark passed', () => {
+        const letterA = textHelper.sanitize('Á');
+        const letterE = textHelper.sanitize('É');
+        const letterI = textHelper.sanitize('Í');
+        const letterO = textHelper.sanitize('Ó');
+        const letterU = textHelper.sanitize('Ú');
+        const text = textHelper.sanitize('Ágata Álvarez');
+
+        assert.strictEqual(letterA, 'A');
+        assert.strictEqual(letterE, 'E');
+        assert.strictEqual(letterI, 'I');
+        assert.strictEqual(letterO, 'O');
+        assert.strictEqual(letterU, 'U');
+        assert.strictEqual(text, 'AA');
     });
 });

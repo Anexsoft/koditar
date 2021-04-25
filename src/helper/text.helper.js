@@ -19,11 +19,11 @@ function sanitize(text) {
     }
 
     // remove accent mark
-    text = text.replaceAll('Á', 'A')
-        .replaceAll('É', 'E')
-        .replaceAll('Í', 'I')
-        .replaceAll('Ó', 'O')
-        .replaceAll('Ú', 'U');
+    text = text.replace(/Á/g, 'A')
+        .replace(/É/g, 'E')
+        .replace(/Í/g, 'I')
+        .replace(/Ó/g, 'O')
+        .replace(/Ú/g, 'U');
 
     return text.toUpperCase();
 }
