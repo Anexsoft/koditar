@@ -36,6 +36,7 @@ The avatar can't recognize between the first and the last name, take care about 
 | Juan Jose Gonzales Miranda | JJ
 | Alberto Miguel Javier Perez Lozano | AM
 | Eduardo | E
+| AX  | AX
 | A  | A
 
 The result will be one or two letters in uppercase.
